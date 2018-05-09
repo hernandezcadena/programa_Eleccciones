@@ -1,0 +1,11 @@
+module ElectoresApp{
+    interface Cliente{
+        boolean insertarElectores(in long EL_ID,in wstring EL_NOMBRE,in wstring EL_CANDIDATO,in wstring EL_PARTIDO);
+        wstring consultarElectores(in long EL_ID,in wstring EL_NOMBRE,in wstring EL_CANDIDATO,in wstring EL_PARTIDO);
+        boolean eliminarElectores(in long EL_ID,in wstring EL_NOMBRE,in wstring EL_CANDIDATO,in wstring EL_PARTIDO);
+        boolean actualizarElectores(in long EL_ID,in wstring EL_NOMBRE,in wstring EL_CANDIDATO,in wstring EL_PARTIDO);
+        wstring listarElectores();
+        oneway void shutdown();
+};
+};
+
