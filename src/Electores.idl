@@ -1,5 +1,5 @@
 module ElectoresApp{
-    interface Cliente{
+    interface Electores{
         boolean insertarElectores(in long EL_ID,in wstring EL_NOMBRE,in wstring EL_CANDIDATO,in wstring EL_PARTIDO);
         wstring consultarElectores(in long EL_ID,in wstring EL_NOMBRE,in wstring EL_CANDIDATO,in wstring EL_PARTIDO);
         boolean eliminarElectores(in long EL_ID,in wstring EL_NOMBRE,in wstring EL_CANDIDATO,in wstring EL_PARTIDO);
